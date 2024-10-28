@@ -1,12 +1,22 @@
 public class Fizzbuzz() {
     public string ValidateNumber(int number) {
         string result = "";
+        bool isDivisableBy3 = false;
+        bool isDivisableBy5 = false;
+
         if (number%3 == 0) {
             result += "fizz";
+            isDivisableBy3 = true;
         }
         if (number%5 == 0) {
             result += "buzz";
+            isDivisableBy5 = true;
         }
+
+        if (isDivisableBy5 == false && isDivisableBy3 == false){
+            result = number.ToString();
+        }
+
         return result;
     } 
 }
