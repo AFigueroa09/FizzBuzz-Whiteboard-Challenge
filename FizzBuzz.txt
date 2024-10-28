@@ -1,4 +1,4 @@
-public class Fizzbuzz() {
+public class Fizzbuzz {
     public string ValidateNumber(int number) {
         string result = "";
         bool isDivisableBy3 = false;
